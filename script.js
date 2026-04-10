@@ -1,13 +1,3 @@
-        // Генерация QR-кода
-        new QRCode(document.getElementById("qrcode"), {
-            text: window.location.href,
-            width: 70,
-            height: 70,
-            colorDark: "#1a2a3a",
-            colorLight: "#ffffff",
-            correctLevel: QRCode.CorrectLevel.M
-        });
-
         // === ЧЕК-ЛИСТ С АВТОМАТИЧЕСКИМ СБРОСОМ ПРИ ОБНОВЛЕНИИ СТРАНИЦЫ ===
         // Нет сохранения в localStorage — каждый новый заход = чистый лист
         

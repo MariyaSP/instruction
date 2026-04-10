@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Правила безопасности | Компьютерный класс</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-card">
+        <div class="hero">
+            <div class="badge">Документ № 42-ПК</div>
+            <h1>Правила безопасности</h1>
+            <p>при работе в компьютерном классе</p>
+        </div>
+
+        <div class="content">
+            <div class="progress-section">
+                <div class="progress-text">✓ Ознакомление с правилами</div>
+                <div class="progress-bar-bg">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressPercent">0%</div>
+                <button class="reset-btn" id="resetBtn">Сбросить</button>
+            </div>
+
+            <div class="section-title">1. Общие требования</div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">🍽️</div>
+                    <div class="rule-title">Питание и напитки</div>
+                </div>
+                <div class="rule-desc">
+                    Приём пищи и напитков в компьютерном классе запрещён.
+                </div>
+                <div class="rule-detail">
+                    Крошки и пролитая жидкость выводят оборудование из строя. Бутылки с водой и еда должны оставаться за дверью класса.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="0">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">🧹</div>
+                    <div class="rule-title">Порядок на рабочем месте</div>
+                </div>
+                <div class="rule-desc">
+                    Рабочее место должно содержаться в чистоте.
+                </div>
+                <div class="rule-detail">
+                    Запрещается оставлять мусор, жевательную резинку под столом, посторонние предметы на клавиатуре и системном блоке.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="1">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="section-title">2. Перед началом работы</div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">✋</div>
+                    <div class="rule-title">Осмотр оборудования</div>
+                </div>
+                <div class="rule-desc">
+                    Перед включением компьютера убедитесь в исправности оборудования.
+                </div>
+                <div class="rule-detail">
+                    Проверьте целостность кабелей, отсутствие видимых повреждений корпуса. При обнаружении неисправностей сообщите преподавателю.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="2">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">🧼</div>
+                    <div class="rule-title">Гигиена рук</div>
+                </div>
+                <div class="rule-desc">
+                    Работа за компьютером выполняется чистыми, сухими руками.
+                </div>
+                <div class="rule-detail">
+                    Влажные или жирные руки повреждают клавиатуру и мышь. После использования санитайзера дождитесь полного высыхания рук.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="3">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="section-title">3. Во время работы</div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">🔌</div>
+                    <div class="rule-title">Электробезопасность</div>
+                </div>
+                <div class="rule-desc">
+                    Запрещается самостоятельно подключать или отключать оборудование.
+                </div>
+                <div class="rule-detail">
+                    Не дёргайте за кабели, не прикасайтесь к розеткам мокрыми руками. Любые манипуляции с питанием — только с разрешения преподавателя.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="4">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">💿</div>
+                    <div class="rule-title">Использование внешних носителей</div>
+                </div>
+                <div class="rule-desc">
+                    Подключение USB-накопителей и внешних устройств допускается только с разрешения преподавателя.
+                </div>
+                <div class="rule-detail">
+                    Несанкционированное подключение может привести к заражению компьютера вредоносным ПО или потере данных. Исключение — лицензионные носители, выданные в классе.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="5">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">💺</div>
+                    <div class="rule-title">Эргономика и осанка</div>
+                </div>
+                <div class="rule-desc">
+                    Соблюдайте правильную рабочую позу.
+                </div>
+                <div class="rule-detail">
+                    Расстояние от глаз до монитора — не менее 50 см. Спина прямая, стопы на полу. Делайте перерывы каждые 45 минут.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="6">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-header">
+                    <div class="rule-icon">🔊</div>
+                    <div class="rule-title">Аудиооборудование</div>
+                </div>
+                <div class="rule-desc">
+                    Используйте наушники на умеренной громкости.
+                </div>
+                <div class="rule-detail">
+                    Одно ухо должно оставаться свободным для восприятия объявлений преподавателя и сигналов оповещения.
+                </div>
+                <label class="check-wrapper">
+                    <input type="checkbox" class="rule-check" data-rule="7">
+                    <span>Ознакомлен(а)</span>
+                </label>
+            </div>
+
+            <div class="section-title">4. Категорически запрещается</div>
+
+            <div class="forbidden-pills">
+                <span class="pill">Приносить еду и напитки</span>
+                <span class="pill">Отключать/включать питание без разрешения</span>
+                <span class="pill">Вставлять посторонние USB-устройства</span>
+                <span class="pill">Разбирать или ремонтировать технику</span>
+                <span class="pill">Бегать и толкаться между рядами</span>
+                <span class="pill">Заливать клавиатуру жидкостями</span>
+                <span class="pill">Использовать телефон во время объяснения</span>
+            </div>
+
+            <div class="section-title">5. Действия в экстренных ситуациях</div>
+
+            <div class="emergency-glass">
+                <h3>
+                    <span>⚠️</span> Порядок действий при аварийной ситуации
+                </h3>
+                <ul>
+                    <li><strong>При запахе гари, дыме или искрении</strong> — немедленно сообщите преподавателю.</li>
+                    <li><strong>При поражении электрическим током</strong> — отключите питание сухими руками или через общий рубильник.</li>
+                    <li><strong>При пожаре</strong> — покиньте класс, не создавая паники, следуйте указаниям преподавателя.</li>
+                    <li><strong>При недомогании или травме</strong> — обратитесь к преподавателю для получения первой помощи.</li>
+                </ul>
+                <p style="margin-top: 10px; font-size: 0.7rem; color: #e0aaa5;">
+                    📞 Экстренные номера: <strong>101</strong> (пожарная), <strong>103</strong> (скорая), <strong>112</strong> (единая диспетчерская)
+                </p>
+            </div>
+
+            <div class="qr-modern">
+                <div class="qr-box-modern">
+                    <div id="qrcode"></div>
+                    <p>Сохранить правила</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Документ обязателен к ознакомлению всеми лицами, работающими в компьютерном классе<br>
+            Нарушение правил влечёт за собой отстранение от работы
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
